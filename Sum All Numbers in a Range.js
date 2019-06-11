@@ -6,12 +6,27 @@
 
 
 function sumAll(arr) {
-    return 1;
+   let start = Math.min(arr[0], arr[1]);
+   let end = Math.max(arr[0],arr[1]);
+   console.log(start,end);
+   let result = 0;
+   for ( let i = start; i <= end ; i++){
+    result += i;
+   }
+   return result;
+   
+
   }
   
 
-  
-  console.log( 
-  sumAll([1, 4])
+
+console.log( 
+//sumAll([5, 10])
+
+//sumAll([1, 4]) //should return a number.
+//sumAll([1, 4]) ///should return 10.
+//sumAll([4, 1]) //should return 10.
+sumAll([5, 10]) //should return 45.
+//sumAll([10, 5]) //should return 45.
   );
 
